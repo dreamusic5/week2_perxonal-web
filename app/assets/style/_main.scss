@@ -4,7 +4,7 @@ body{
            Roboto, Ubunto,                              /* Android、Linux */
            "Helvetica Neue", Arial, sans-serif;         /* 通用字體 */
     font-size: 24px;
-    line-height: 42px;
+    line-height: 1.75;
     font-weight: bold;
     }
 // 消除圖片空隙
@@ -50,16 +50,30 @@ img{
 .mb-7{
     margin-bottom: 56px;
 }
+//container
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .header{
-    padding: 308px 0;
+    height: 958px;
     color: #fff;
     background-image: url(../images/banner.png);
     background-size: cover;
     background-position: center;
-    .container{
-        margin: 0 auto;
-        width: 310px;
+    display: flex;
+    align-items: center;
+    h1 span{
+        font-size: 24px;
+        line-height: 1.75;
+    }
+    .headerContent{
+        padding-left: 444px;
+        padding-right: 444px;
     }
     .socialMedia{
         display: flex;
@@ -73,13 +87,8 @@ img{
 }
 
 .about{
-    margin: 0 auto;
-    width: 500px;
-    padding: 56px 0;
+    padding: 56px 350px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     img{
         margin-bottom: 20px;
     }
@@ -97,10 +106,12 @@ img{
         li{
             display: flex;
             align-items: center;
-
-            i{
+            span{
+                border-radius: 50%;
                 margin-right: 16px;
-                color: #891818;
+                background-color: #891818;
+                width: 22px;
+                height: 22px;
             }
         }
     }
@@ -109,9 +120,6 @@ img{
     padding: 56px 0px 120px 0px;
     background-color: #000;
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     h2{
         margin-bottom: 12px;
@@ -127,9 +135,6 @@ img{
 }
 .works{
     padding: 56px 0 96px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     .works-img{
         display: flex;
@@ -143,9 +148,11 @@ img{
     padding: 64px 0;
     text-align: center;
     font-style: italic;
-}
-
-.container{
-    width: 1200px;
-    margin: 0 auto;
+    a{
+        text-decoration: none;
+        color: #fff;
+        :hover{
+            text-decoration:underline;
+        }
+    }
 }
