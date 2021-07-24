@@ -88,19 +88,12 @@ img {
 .mb-7 {
   margin-bottom: 56px; }
 
+.pb-1 {
+  padding-bottom: 24px; }
+
 .container {
   width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  margin: 0 auto; }
 
 .header {
   height: 958px;
@@ -118,8 +111,8 @@ img {
     font-size: 24px;
     line-height: 1.75; }
   .header .headerContent {
-    padding-left: 444px;
-    padding-right: 444px; }
+    max-width: 304px;
+    margin: 0 auto; }
   .header .socialMedia {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -133,8 +126,9 @@ img {
               transform: scale(1.2, 1.2); }
 
 .about {
-  padding: 56px 350px;
-  text-align: center; }
+  padding: 56px 0px;
+  text-align: center;
+  margin: 0 auto; }
   .about img {
     margin-bottom: 20px; }
   .about .school {
@@ -153,7 +147,8 @@ img {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0 auto; }
     .about .aboutInformation li {
       display: -webkit-box;
       display: -ms-flexbox;
